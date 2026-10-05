@@ -16,9 +16,23 @@ Overlapping Tutor/Lab topics were **merged into single unified assignments**. Fo
 | [system-architecture-design](system-architecture-design/) | System architecture design & visualization |
 | [dockerized-predictive-api](dockerized-predictive-api/) | Predictive app, Docker, Hub publish + docs (+ optional Airflow bonus) |
 | [airflow-data-processing](airflow-data-processing/) | Two Airflow DAGs: download/split + clean/standardize |
+| [kedro-pipelines](kedro-pipelines/) | Reproducible Kedro pipelines (catalog, nodes, parameters) |
+| [data-engineering](data-engineering/) | Batch data engineering: ingest → clean → curated + quality checks |
+| [examples-of-models](examples-of-models/) | Modality mini-projects (image, video, audio, graphs, LLM, generative AI) |
 | [project-pitch-presentation](project-pitch-presentation/) | Project pitch / presentation |
 | [google-colab-linear-regression](google-colab-linear-regression/) | Google Colab + linear regression |
 | [synthetic-clusters-ci-lab](synthetic-clusters-ci-lab/) | Synthetic 2D clusters + CI accuracy |
+
+### `examples-of-models` subfolders
+
+| Subfolder | Modality |
+|-----------|----------|
+| [image-classification](examples-of-models/image-classification/) | Images |
+| [video-understanding](examples-of-models/video-understanding/) | Video |
+| [audio-classification](examples-of-models/audio-classification/) | Audio |
+| [graph-learning](examples-of-models/graph-learning/) | Graphs |
+| [llm-text](examples-of-models/llm-text/) | LLM / text |
+| [generative-ai](examples-of-models/generative-ai/) | Generative AI |
 
 ---
 
