@@ -1,158 +1,155 @@
-# Tutor6
+# Dockerized Predictive API
+
+Build a small predictive application (API or CLI), run it in Docker, publish the image to Docker Hub, and document how others can use it.
+
+**Total: 20 points** (+ optional 10)
+
+Docs: [Get started with Docker](https://www.docker.com/get-started) · [Docker Hub](https://hub.docker.com/)
 
 ---
 
-### Task: "Create and Publish a Dockerized API with a Predictive Model"
+## Objectives
 
-#### Objectives:
-1. Develop a simple API application that uses a predictive model.
-2. Dockerize the application and run it locally.
-3. Push the Docker image to DockerHub for public use.
+1. Implement a predictive script/API that accepts structured input and returns a prediction.
+2. Package it in an optimized Docker image and run it locally.
+3. Publish the image to Docker Hub.
+4. Provide a complete project `README.md` (clone, local run, Docker run, Hub pull).
 
 ---
 
-### Instructions:
+## Prerequisites
 
-#### 1. Prerequisites
-Make sure you have the following installed:
-- Docker (https://www.docker.com/get-started)
+- Docker
 - Python 3.x
-- A DockerHub account (https://hub.docker.com/)
+- Docker Hub account
 
-Log in to DockerHub via the terminal:
 ```bash
 docker login
 ```
 
 ---
 
-#### 2. Create the Application
-1. Create a project directory:
-   ```bash
-   mkdir predictive-api && cd predictive-api
-   ```
+## Part A — Predictive application (5 points)
 
-2. Install Python dependencies locally (optional, for testing):
-   ```bash
-   pip install fastapi uvicorn scikit-learn
-   ```
+Create a project directory (e.g. `predictive-api`) with:
 
-3. Create a Python script for the API. Save it as `app.py` for your model, you can use existing model and just copy to Docker image:
+- A prediction entrypoint using **FastAPI**, **Flask**, or a **CLI**.
+- Input in **JSON** and/or **CSV**; clear output with the predicted value(s).
+- You may reuse an existing trained model (copy weights/artefacts into the image) or train a simple model inside the app for the demo.
 
-Example:
-   ```python
-   from fastapi import FastAPI, HTTPException
-   from pydantic import BaseModel
-   from sklearn.linear_model import LinearRegression
-   import numpy as np
+Example FastAPI sketch (`app.py`):
 
-   # Initialize FastAPI app
-   app = FastAPI()
+```python
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
+from sklearn.linear_model import LinearRegression
+import numpy as np
 
-   # Example predictive model (Linear Regression)
-   model = LinearRegression()
-   X_train = np.array([[1], [2], [3], [4], [5]])
-   y_train = np.array([2, 4, 6, 8, 10])  # Simple 2x function
-   model.fit(X_train, y_train)
+app = FastAPI()
 
-   # Request body model
-   class PredictionRequest(BaseModel):
-       input_value: float
+model = LinearRegression()
+X_train = np.array([[1], [2], [3], [4], [5]])
+y_train = np.array([2, 4, 6, 8, 10])
+model.fit(X_train, y_train)
 
-   @app.get("/")
-   def root():
-       return {"message": "Welcome to the Predictive Model API!"}
+class PredictionRequest(BaseModel):
+    input_value: float
 
-   @app.post("/predict/")
-   def predict(request: PredictionRequest):
-       try:
-           input_array = np.array([[request.input_value]])
-           prediction = model.predict(input_array)
-           return {"input": request.input_value, "prediction": prediction[0]}
-       except Exception as e:
-           raise HTTPException(status_code=500, detail=str(e))
-   ```
+@app.get("/")
+def root():
+    return {"message": "Welcome to the Predictive Model API!"}
 
-4. Create a `requirements.txt` file:
-   ```
-   fastapi==0.95.2
-   uvicorn==0.22.0
-   scikit-learn==1.3.1
-   numpy==1.25.2
-   ```
+@app.post("/predict/")
+def predict(request: PredictionRequest):
+    try:
+        prediction = model.predict(np.array([[request.input_value]]))
+        return {"input": request.input_value, "prediction": float(prediction[0])}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+```
 
----
+Example `requirements.txt`:
 
-#### 3. Create a Dockerfile
-Add the following content to a `Dockerfile`:
-```dockerfile
-# Use an official Python image
-FROM python:3.9-slim
-
-# Set working directory
-WORKDIR /app
-
-# Copy application files
-COPY . /app
-
-# Install dependencies
-RUN pip install -r requirements.txt
-
-# Expose port 8000
-EXPOSE 8000
-
-# Command to run the application
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+fastapi==0.95.2
+uvicorn==0.22.0
+scikit-learn==1.3.1
+numpy==1.25.2
 ```
 
 ---
 
-#### 4. Build and Run the Docker Image
-1. Build the Docker image:
-   ```bash
-   docker build -t your_dockerhub_username/predictive-api .
-   ```
+## Part B — Dockerfile and local container run (5 points)
 
-2. Run the container:
-   ```bash
-   docker run -p 8000:8000 your_dockerhub_username/predictive-api
-   ```
+Provide a `Dockerfile` that:
 
-3. Test the API locally:
-   - Open your browser at [http://localhost:8000](http://localhost:8000) for the root endpoint.
-   - Use a tool like Postman or `curl` to test the `/predict/` endpoint. Example:
-     ```bash
-     curl -X POST "http://localhost:8000/predict/" -H "Content-Type: application/json" -d '{"input_value": 3.5}'
-     ```
+- Uses a slim base image where practical.
+- Installs only required dependencies.
+- Exposes the service port (e.g. `8000`).
+- Starts the app with a clear `CMD`.
+
+Example:
+
+```dockerfile
+FROM python:3.9-slim
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+EXPOSE 8000
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+Build and run:
+
+```bash
+docker build -t your_dockerhub_username/predictive-api .
+docker run -p 8000:8000 your_dockerhub_username/predictive-api
+```
+
+Smoke-test (API example):
+
+```bash
+curl -X POST "http://localhost:8000/predict/" \
+  -H "Content-Type: application/json" \
+  -d '{"input_value": 3.5}'
+```
 
 ---
 
-#### 5. Push to DockerHub
-1. Tag the image:
-   ```bash
-   docker tag your_dockerhub_username/predictive-api:latest your_dockerhub_username/predictive-api:v1
-   ```
+## Part C — Publish to Docker Hub (5 points)
 
-2. Push the image to DockerHub:
-   ```bash
-   docker push your_dockerhub_username/predictive-api:v1
-   ```
+```bash
+docker tag your_dockerhub_username/predictive-api:latest your_dockerhub_username/predictive-api:v1
+docker push your_dockerhub_username/predictive-api:v1
+```
 
-3. Verify the image is available on DockerHub.
+Verify the image is visible on Docker Hub. Others should be able to run:
 
----
-
-#### 6. Test Public Usage
-Share your DockerHub image URL with others so they can run your container:
 ```bash
 docker run -p 8000:8000 your_dockerhub_username/predictive-api:v1
 ```
 
 ---
 
-### Optional Enhancements
-- Replace the Linear Regression model with a more complex one, such as a pre-trained ML model from `sklearn` or `tensorflow`.
-- Add input validation or multiple endpoints for different types of predictions.
-- Automate the build and deployment process using GitHub Actions or another CI/CD tool.
+## Part D — Repository documentation (5 points)
 
-Good luck! 🚀
+GitHub repository must include application code, model artefacts (if any), `Dockerfile`, and a `README.md` covering:
+
+1. How to clone the repository.
+2. How to run the application locally (without Docker).
+3. How to build and run with Docker.
+4. How to pull and run the image from Docker Hub.
+
+---
+
+## Optional bonus (+10 points)
+
+Write an **Airflow DAG** that automatically **builds and publishes** the Docker image (CI-style automation of Parts B–C).
+
+---
+
+## Suggested enhancements (not graded separately)
+
+- Stronger / pre-trained model instead of the toy regressor.
+- Input validation and multiple prediction endpoints.
+- GitHub Actions (or similar) for build & push.

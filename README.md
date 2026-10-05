@@ -2,27 +2,23 @@
 
 Aggregated course tutorials created by the instructor in [`PROJ-D-2024`](https://github.com/orgs/PROJ-D-2024/repositories), **excluding** thesis task sets (counterparts of `Zadania_PRO3_D` / `PRO-D-2-THESIS`) and student submission repositories.
 
-Folder names describe the tutorial topic. The original `PROJ-D-2024` repository name is kept in the table for traceability.
+Overlapping Tutor/Lab topics were **merged into single unified assignments**. Folder names describe the topic; original source repos are listed for traceability.
 
 ---
 
 ## Included tutorials
 
-| Folder | Source repo | Topic |
-|--------|-------------|--------|
-| [git-and-github-proficiency](git-and-github-proficiency/) | `PROJ-D-2024/Tutor1` | Git & GitHub proficiency test |
-| [data-cleaning](data-cleaning/) | `PROJ-D-2024/Tutor2` | Data cleaning for thesis-related datasets |
-| [data-standardization-and-code-optimization](data-standardization-and-code-optimization/) | `PROJ-D-2024/Tutor3` | Data standardization & code optimization |
-| [model-training-and-evaluation](model-training-and-evaluation/) | `PROJ-D-2024/Tutor4_tools` | Model training/evaluation + tooling notes |
-| [system-architecture-design](system-architecture-design/) | `PROJ-D-2024/Tutor5` | System architecture design & visualization |
-| [dockerized-predictive-api](dockerized-predictive-api/) | `PROJ-D-2024/Tutor6` | Dockerized predictive API |
-| [airflow-dags-extra](airflow-dags-extra/) | `PROJ-D-2024/TutorX1` | Extra: Apache Airflow DAGs |
-| [project-pitch-presentation](project-pitch-presentation/) | `PROJ-D-2024/Tutor-X2` | Extra: project pitch / presentation |
-| [google-colab-linear-regression](google-colab-linear-regression/) | `PROJ-D-2024/Tutorial_1` | Google Colab + linear regression |
-| [synthetic-clusters-ci-lab](synthetic-clusters-ci-lab/) | `PROJ-D-2024/Lab2` | Lab: synthetic 2D clusters + CI accuracy |
-| [data-standardization-lab](data-standardization-lab/) | `PROJ-D-2024/Lab-3` | Lab: standardization / optimization |
-| [airflow-data-processing-lab](airflow-data-processing-lab/) | `PROJ-D-2024/Lab5-Aierflow-pobieranie-przetwarznie-danych` | Lab: Airflow data download & processing |
-| [dockerization-lab](dockerization-lab/) | `PROJ-D-2024/Lab6-Dokeryzacja` | Lab: Dockerization of a predictive app |
+| Folder | Merged from (PROJ-D-2024) | Topic |
+|--------|---------------------------|--------|
+| [git-and-github-proficiency](git-and-github-proficiency/) | `Tutor1` | Git & GitHub proficiency test |
+| [data-cleaning-and-standardization](data-cleaning-and-standardization/) | `Tutor2` + `Tutor3` + `Lab-3` | Cleaning, DB updates, standardization & code quality (40 pts) |
+| [model-training-and-evaluation](model-training-and-evaluation/) | `Tutor4_tools` | Model training/evaluation + tooling notes |
+| [system-architecture-design](system-architecture-design/) | `Tutor5` | System architecture design & visualization |
+| [dockerized-predictive-api](dockerized-predictive-api/) | `Tutor6` + `Lab6-Dokeryzacja` | Predictive app, Docker, Hub publish + docs (+ optional Airflow bonus) |
+| [airflow-data-processing](airflow-data-processing/) | `TutorX1` + `Lab5-Aierflow-…` | Two Airflow DAGs: download/split + clean/standardize |
+| [project-pitch-presentation](project-pitch-presentation/) | `Tutor-X2` | Project pitch / presentation |
+| [google-colab-linear-regression](google-colab-linear-regression/) | `Tutorial_1` | Google Colab + linear regression |
+| [synthetic-clusters-ci-lab](synthetic-clusters-ci-lab/) | `Lab2` | Synthetic 2D clusters + CI accuracy |
 
 ---
 
@@ -36,4 +32,5 @@ Folder names describe the tutorial topic. The original `PROJ-D-2024` repository 
 
 ## Notes
 
-- Content was copied from the private `PROJ-D-2024` instructor templates; treat as course material.
+- Content originates from private `PROJ-D-2024` instructor templates; treat as course material.
+- Where Tutor and Lab variants overlapped, requirements, scoring, and extras were unified into one English brief.
