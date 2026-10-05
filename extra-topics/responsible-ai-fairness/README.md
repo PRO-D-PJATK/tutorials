@@ -2,7 +2,7 @@
 
 Measure and document fairness risks for a predictive model.
 
-**Points: 15**
+**Points: 13**
 
 ---
 

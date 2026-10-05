@@ -2,7 +2,7 @@
 
 Train an image classifier on a public dataset using a CNN or transfer learning.
 
-**Points: 15**
+**Points: 11**
 
 ---
 

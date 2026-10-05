@@ -2,7 +2,7 @@
 
 Classify audio clips using waveform or spectrogram features.
 
-**Points: 15**
+**Points: 12**
 
 ---
 

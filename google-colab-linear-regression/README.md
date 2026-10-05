@@ -1,5 +1,7 @@
 # Introduction to Google Colab + Linear Regression
 
+
+**Points: 5**
 This educational project shows how to start working in **Google Colab** and complete a simple **linear regression** task in Python — one of the basic machine learning models.
 
 Contents:

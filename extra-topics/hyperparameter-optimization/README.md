@@ -2,7 +2,7 @@
 
 Compare systematic HPO against manual defaults on a tabular or small ML task.
 
-**Points: 15**
+**Points: 11**
 
 ---
 

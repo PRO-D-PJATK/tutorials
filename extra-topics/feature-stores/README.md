@@ -2,7 +2,7 @@
 
 Build a minimal feature store workflow: define features, materialize them, and train a model without training–serving skew.
 
-**Points: 15**
+**Points: 16**
 
 ---
 

@@ -2,7 +2,7 @@
 
 Forecast a univariate or small multivariate series with proper temporal validation.
 
-**Points: 15**
+**Points: 12**
 
 ---
 

@@ -6,58 +6,74 @@ Overlapping Tutor/Lab topics were **merged into single unified assignments**. Fo
 
 ---
 
+## Scoring scale
+
+Each assignment is graded on a **5–20 point** scale based on difficulty:
+
+| Points | Difficulty |
+|--------|------------|
+| **5–7** | Very easy / introductory |
+| **8–11** | Easy–moderate |
+| **12–15** | Moderate–challenging |
+| **16–18** | Hard |
+| **19–20** | Very hard / advanced |
+
+Optional bonuses (if stated in a task brief) are **extra** and do not change the base score in the tables below.
+
+---
+
 ## Included tutorials
 
-| Folder | Topic |
-|--------|--------|
-| [git-and-github-proficiency](git-and-github-proficiency/) | Git & GitHub proficiency test |
-| [data-cleaning-and-standardization](data-cleaning-and-standardization/) | Cleaning, DB updates, standardization & code quality (40 pts) |
-| [model-training-and-evaluation](model-training-and-evaluation/) | Model training/evaluation + tooling notes |
-| [system-architecture-design](system-architecture-design/) | System architecture design & visualization |
-| [dockerized-predictive-api](dockerized-predictive-api/) | Predictive app, Docker, Hub publish + docs (+ optional Airflow bonus) |
-| [airflow-data-processing](airflow-data-processing/) | Two Airflow DAGs: download/split + clean/standardize |
-| [kedro-pipelines](kedro-pipelines/) | Reproducible Kedro pipelines (catalog, nodes, parameters) |
-| [data-engineering](data-engineering/) | Batch data engineering: ingest → clean → curated + quality checks |
-| [examples-of-models](examples-of-models/) | Modality mini-projects (image, video, audio, graphs, LLM, generative AI) |
-| [extra-topics](extra-topics/) | Optional advanced DS/ML topics (tracking, HPO, RAG, scraping, streaming, …) |
-| [project-pitch-presentation](project-pitch-presentation/) | Project pitch / presentation |
-| [google-colab-linear-regression](google-colab-linear-regression/) | Google Colab + linear regression |
-| [synthetic-clusters-ci-lab](synthetic-clusters-ci-lab/) | Synthetic 2D clusters + CI accuracy |
+| Folder | Topic | Points |
+|--------|--------|:------:|
+| [git-and-github-proficiency](git-and-github-proficiency/) | Git & GitHub proficiency test | 5 |
+| [google-colab-linear-regression](google-colab-linear-regression/) | Google Colab + linear regression | 5 |
+| [project-pitch-presentation](project-pitch-presentation/) | Project pitch / presentation | 6 |
+| [synthetic-clusters-ci-lab](synthetic-clusters-ci-lab/) | Synthetic 2D clusters + CI accuracy | 8 |
+| [system-architecture-design](system-architecture-design/) | System architecture design & visualization | 9 |
+| [model-training-and-evaluation](model-training-and-evaluation/) | Model training/evaluation + tooling notes | 10 |
+| [data-cleaning-and-standardization](data-cleaning-and-standardization/) | Cleaning, DB updates, standardization & code quality | 14 |
+| [dockerized-predictive-api](dockerized-predictive-api/) | Predictive app, Docker, Hub publish + docs | 14 |
+| [kedro-pipelines](kedro-pipelines/) | Reproducible Kedro pipelines (catalog, nodes, parameters) | 15 |
+| [airflow-data-processing](airflow-data-processing/) | Two Airflow DAGs: download/split + clean/standardize | 16 |
+| [data-engineering](data-engineering/) | Batch data engineering: ingest → clean → curated + quality checks | 17 |
+| [examples-of-models](examples-of-models/) | Modality mini-projects (see subfolders; each scored separately) | — |
+| [extra-topics](extra-topics/) | Optional advanced DS/ML topics (see subfolders; each scored separately) | — |
 
 ### `examples-of-models` subfolders
 
-| Subfolder | Modality |
-|-----------|----------|
-| [image-classification](examples-of-models/image-classification/) | Images |
-| [video-understanding](examples-of-models/video-understanding/) | Video |
-| [audio-classification](examples-of-models/audio-classification/) | Audio |
-| [graph-learning](examples-of-models/graph-learning/) | Graphs |
-| [llm-text](examples-of-models/llm-text/) | LLM / text |
-| [generative-ai](examples-of-models/generative-ai/) | Generative AI |
+| Subfolder | Modality | Points |
+|-----------|----------|:------:|
+| [image-classification](examples-of-models/image-classification/) | Images | 11 |
+| [audio-classification](examples-of-models/audio-classification/) | Audio | 12 |
+| [llm-text](examples-of-models/llm-text/) | LLM / text | 13 |
+| [generative-ai](examples-of-models/generative-ai/) | Generative AI | 14 |
+| [graph-learning](examples-of-models/graph-learning/) | Graphs | 15 |
+| [video-understanding](examples-of-models/video-understanding/) | Video | 16 |
 
 ### `extra-topics` subfolders
 
-| Subfolder | Topic |
-|-----------|--------|
-| [experiment-tracking](extra-topics/experiment-tracking/) | MLflow / W&B experiment tracking |
-| [feature-stores](extra-topics/feature-stores/) | Feature store basics & point-in-time correctness |
-| [model-monitoring-and-drift](extra-topics/model-monitoring-and-drift/) | Monitoring, data/concept drift, alerts |
-| [time-series-forecasting](extra-topics/time-series-forecasting/) | Forecasting with walk-forward validation |
-| [recommender-systems](extra-topics/recommender-systems/) | Collaborative / content-based recommenders |
-| [mlops-cicd](extra-topics/mlops-cicd/) | CI/CD for data + model pipelines |
-| [responsible-ai-fairness](extra-topics/responsible-ai-fairness/) | Fairness metrics & model cards |
-| [vector-search-rag](extra-topics/vector-search-rag/) | Embeddings, vector search, RAG evaluation |
-| [hyperparameter-optimization](extra-topics/hyperparameter-optimization/) | Optuna / systematic HPO |
-| [tabular-automl](extra-topics/tabular-automl/) | AutoML vs hand-tuned baseline |
-| [data-scraping](extra-topics/data-scraping/) | Scraping from websites and from streams |
-| [live-stream-analytics](extra-topics/live-stream-analytics/) | Live / streaming analytics |
+| Subfolder | Topic | Points |
+|-----------|--------|:------:|
+| [experiment-tracking](extra-topics/experiment-tracking/) | MLflow / W&B experiment tracking | 9 |
+| [tabular-automl](extra-topics/tabular-automl/) | AutoML vs hand-tuned baseline | 10 |
+| [hyperparameter-optimization](extra-topics/hyperparameter-optimization/) | Optuna / systematic HPO | 11 |
+| [recommender-systems](extra-topics/recommender-systems/) | Collaborative / content-based recommenders | 12 |
+| [time-series-forecasting](extra-topics/time-series-forecasting/) | Forecasting with walk-forward validation | 12 |
+| [responsible-ai-fairness](extra-topics/responsible-ai-fairness/) | Fairness metrics & model cards | 13 |
+| [mlops-cicd](extra-topics/mlops-cicd/) | CI/CD for data + model pipelines | 14 |
+| [vector-search-rag](extra-topics/vector-search-rag/) | Embeddings, vector search, RAG evaluation | 15 |
+| [model-monitoring-and-drift](extra-topics/model-monitoring-and-drift/) | Monitoring, data/concept drift, alerts | 15 |
+| [feature-stores](extra-topics/feature-stores/) | Feature store basics & point-in-time correctness | 16 |
+| [data-scraping](extra-topics/data-scraping/) | Scraping from websites and from streams (sum of both sub-tasks) | 18 |
+| [live-stream-analytics](extra-topics/live-stream-analytics/) | Live / streaming analytics | 18 |
 
 ### `data-scraping` subfolders
 
-| Subfolder | Topic |
-|-----------|--------|
-| [website-scraping](extra-topics/data-scraping/website-scraping/) | HTML / site scraping |
-| [stream-scraping](extra-topics/data-scraping/stream-scraping/) | Collecting records from a live or simulated stream |
+| Subfolder | Topic | Points |
+|-----------|--------|:------:|
+| [website-scraping](extra-topics/data-scraping/website-scraping/) | HTML / site scraping | 8 |
+| [stream-scraping](extra-topics/data-scraping/stream-scraping/) | Collecting records from a live or simulated stream | 10 |
 
 ---
 
@@ -73,3 +89,4 @@ Overlapping Tutor/Lab topics were **merged into single unified assignments**. Fo
 
 - Content originates from private `PROJ-D-2024` instructor templates; treat as course material.
 - All assignment briefs in this repository are written in English.
+- The **Points** column is the maximum grade for that assignment (difficulty-weighted, scale **5–20**).

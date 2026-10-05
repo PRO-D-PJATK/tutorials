@@ -2,7 +2,7 @@
 
 Build a simple video recognition pipeline: classify short clips or frame sequences.
 
-**Points: 15**
+**Points: 16**
 
 ---
 

@@ -2,7 +2,7 @@
 
 Scrape structured data from web pages (static or lightly dynamic) into a reproducible dataset.
 
-**Points: 10**
+**Points: 8**
 
 ---
 

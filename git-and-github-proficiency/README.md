@@ -1,5 +1,7 @@
 # Git and GitHub Proficiency
 
+
+**Points: 5**
 Test your ability to use Git and GitHub effectively with branches, pull requests, and repository management. You will create a simple script in any scripting language (e.g., Python, Bash) that uses the `--help` flag to display a help message, then manage the project with Git and GitHub.
 
 #### Instructions:
@@ -30,20 +32,20 @@ Test your ability to use Git and GitHub effectively with branches, pull requests
 6. **Submit your repository**:
    - After completing the task, submit the URL of your GitHub repository, in return to assignment.
 
-#### Grading Criteria (10 points total):
-1. **Repository Structure** (2 points):
+#### Grading Criteria (5 points total):
+1. **Repository Structure** (1 point):
    - Repository correctly created with `.gitignore` and `README.md`.
    
-2. **Branching** (2 points):
+2. **Branching** (1 point):
    - A separate branch `feature-help-script` is correctly created and used for development.
    
-3. **Pull Request** (2 points):
-   - A pull request is correctly created from the `feature-help-script` branch to `main`, and a group member is added as a reviewer, but niot a TEACHER!.
+3. **Pull Request** (1 point):
+   - A pull request is correctly created from the `feature-help-script` branch to `main`, and a group member is added as a reviewer, but not a teacher..
    
-4. **Script Functionality** (2 points):
+4. **Script Functionality** (1 point):
    - The script correctly handles the `--help` flag and displays an appropriate help message.
    
-5. **Git Usage** (2 points):
+5. **Git Usage** (1 point):
    - Proper use of Git, including clear and meaningful commit messages and appropriate branch management.
 
 Good luck!

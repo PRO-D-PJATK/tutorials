@@ -2,7 +2,7 @@
 
 Automate tests and packaging for a small ML project so every change is checked before “release”.
 
-**Points: 15**
+**Points: 14**
 
 ---
 

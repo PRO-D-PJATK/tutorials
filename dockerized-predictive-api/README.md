@@ -2,7 +2,7 @@
 
 Build a small predictive application (API or CLI), run it in Docker, publish the image to Docker Hub, and document how others can use it.
 
-**Total: 20 points** (+ optional 10)
+**Total: 14 points** (+ optional bonus up to +6)
 
 Docs: [Get started with Docker](https://www.docker.com/get-started) · [Docker Hub](https://hub.docker.com/)
 
@@ -29,7 +29,7 @@ docker login
 
 ---
 
-## Part A — Predictive application (5 points)
+## Part A — Predictive application (3 points)
 
 Create a project directory (e.g. `predictive-api`) with:
 
@@ -79,7 +79,7 @@ numpy==1.25.2
 
 ---
 
-## Part B — Dockerfile and local container run (5 points)
+## Part B — Dockerfile and local container run (4 points)
 
 Provide a `Dockerfile` that:
 
@@ -116,7 +116,7 @@ curl -X POST "http://localhost:8000/predict/" \
 
 ---
 
-## Part C — Publish to Docker Hub (5 points)
+## Part C — Publish to Docker Hub (3 points)
 
 ```bash
 docker tag your_dockerhub_username/predictive-api:latest your_dockerhub_username/predictive-api:v1
@@ -131,7 +131,7 @@ docker run -p 8000:8000 your_dockerhub_username/predictive-api:v1
 
 ---
 
-## Part D — Repository documentation (5 points)
+## Part D — Repository documentation (4 points)
 
 GitHub repository must include application code, model artefacts (if any), `Dockerfile`, and a `README.md` covering:
 
@@ -142,7 +142,7 @@ GitHub repository must include application code, model artefacts (if any), `Dock
 
 ---
 
-## Optional bonus (+10 points)
+## Optional bonus (up to +6 points)
 
 Write an **Airflow DAG** that automatically **builds and publishes** the Docker image (CI-style automation of Parts B–C).
 

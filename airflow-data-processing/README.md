@@ -2,7 +2,7 @@
 
 Create two Apache Airflow DAGs for a small data pipeline: download & split, then clean & standardize. Prefer running Airflow via Docker Compose.
 
-**Total: 20 points** (+ optional extras)
+**Total: 16 points** (+ optional extras)
 
 Reference: [Airflow with Docker Compose](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
 
@@ -18,7 +18,7 @@ This folder also includes example `docker-compose.yml`, sample DAGs under `dags/
 
 ---
 
-## DAG 1 — Download and split (10 points)
+## DAG 1 — Download and split (8 points)
 
 **Goal:** Fetch a dataset and split it for modeling vs further fine-tuning / hold-out use.
 
@@ -35,7 +35,7 @@ This folder also includes example `docker-compose.yml`, sample DAGs under `dags/
 
 ---
 
-## DAG 2 — Clean and standardize (10 points)
+## DAG 2 — Clean and standardize (8 points)
 
 **Goal:** Process the modeling split (from local artefacts of DAG 1 and/or Sheets/cloud).
 

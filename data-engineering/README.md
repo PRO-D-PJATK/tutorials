@@ -2,7 +2,7 @@
 
 Design a small **batch data pipeline**: ingest raw data, transform it into analytics-ready tables, store results, and document quality checks. Focus on engineering practices (schemas, idempotency, orchestration readiness), not on fancy models.
 
-**Total: 25 points**
+**Total: 17 points** (difficulty-weighted; scale 5–20)
 
 ---
 

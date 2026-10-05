@@ -1,5 +1,7 @@
 # Synthetic Clusters + CI Lab
 
+
+**Points: 8**
 Train a simple classifier on two synthetic 2D point clouds and wire the result into GitHub Actions.
 
 ---

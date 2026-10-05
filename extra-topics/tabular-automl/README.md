@@ -2,7 +2,7 @@
 
 Compare an AutoML tool with a carefully engineered baseline on the same tabular problem.
 
-**Points: 15**
+**Points: 10**
 
 ---
 

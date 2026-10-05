@@ -1,4 +1,6 @@
-**Task: Design and Visualize the Architecture of Your Solution**
+# System Architecture Design
+
+**Points: 9**
 
 ### Objective:
 The goal of this task is to create and present the system architecture for your engineering project. This task will help you structure and clarify the components, data flow, and interactions within your solution. If your project involves creating a library or framework, the architecture should include its core functionalities and how users interact with it.
@@ -27,11 +29,11 @@ The goal of this task is to create and present the system architecture for your 
 
 ---
 
-**Evaluation Criteria (20 points total)**:
-1. **Completeness (5 points)**: All major components and interactions are included in the diagram.
-2. **Clarity and Presentation (5 points)**: The diagram is clear, well-organized, and visually appealing.
-3. **Explanation (5 points)**: The description explains the architecture, the role of each component, and how they interact.
-4. **Submission Quality (5 points)**: Proper use of Git for submission, with all necessary files and a clear structure in the repository.
+**Evaluation Criteria (9 points total)**:
+1. **Completeness (2 points)**: All major components and interactions are included in the diagram.
+2. **Clarity and Presentation (2 points)**: The diagram is clear, well-organized, and visually appealing.
+3. **Explanation (3 points)**: The description explains the architecture, the role of each component, and how they interact.
+4. **Submission Quality (2 points)**: Proper use of Git for submission, with all necessary files and a clear structure in the repository.
 
 ---
 

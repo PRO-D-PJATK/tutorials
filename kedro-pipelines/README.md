@@ -2,7 +2,7 @@
 
 Build a small **Kedro** project that turns raw data into a trained model through named datasets, modular pipelines, and configuration — without hard-coded paths.
 
-**Total: 20 points**
+**Total: 15 points**
 
 Docs: [Kedro documentation](https://docs.kedro.org/)
 

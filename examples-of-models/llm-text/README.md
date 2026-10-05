@@ -2,7 +2,7 @@
 
 Use a large language model (or a strong transformer text model) for a concrete NLP task.
 
-**Points: 15**
+**Points: 13**
 
 ---
 

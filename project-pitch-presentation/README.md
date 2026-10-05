@@ -1,6 +1,6 @@
 # Project Pitch Presentation
 
-**Points: 10**
+**Points: 6**
 
 
 #### Objectives:
@@ -46,7 +46,7 @@
   - Description of challenges encountered and how they were addressed.  
   - Conclusions and reflections on the project process.  
 
-#### Scoring (10 points):  
+#### Scoring (6 points):  
 
 1. **Clarity and Structure of Presentation (3 points)**  
    - Is the presentation understandable and well-organized?  

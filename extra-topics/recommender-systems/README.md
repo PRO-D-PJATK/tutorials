@@ -2,7 +2,7 @@
 
 Build a small recommender on public interaction data.
 
-**Points: 15**
+**Points: 12**
 
 ---
 

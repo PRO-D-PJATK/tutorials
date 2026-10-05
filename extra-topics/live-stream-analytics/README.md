@@ -2,7 +2,7 @@
 
 Analyze data **while it is flowing**: maintain running aggregates, windows, and simple alerts on a stream (real or simulated).
 
-**Points: 15**
+**Points: 18**
 
 This topic complements [data-scraping/stream-scraping](../data-scraping/stream-scraping/) (collecting). Here the focus is **online analytics**, not just storage.
 

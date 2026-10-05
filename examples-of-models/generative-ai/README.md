@@ -2,7 +2,7 @@
 
 Build a small generative pipeline: create new content (text, image, audio) or generative embeddings with a clear evaluation of quality and risks.
 
-**Points: 15**
+**Points: 14**
 
 ---
 

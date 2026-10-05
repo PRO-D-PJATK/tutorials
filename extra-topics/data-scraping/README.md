@@ -2,7 +2,7 @@
 
 Collect data programmatically from **websites** and from **streams**. Complete **both** sub-tasks below (each lives in its own subfolder).
 
-**Total: 20 points** (10 + 10)
+**Total: 18 points** (8 + 10)
 
 | Subfolder | Focus |
 |-----------|--------|

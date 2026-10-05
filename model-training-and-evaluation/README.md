@@ -1,6 +1,6 @@
 # Model Training and Evaluation
 
-**Points: 20**
+**Points: 10**
 
 1. **Model Selection (2 Points)**  
    - Select at least **three different machine learning models** from the following options (or any others you prefer):
