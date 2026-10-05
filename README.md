@@ -35,9 +35,29 @@ Overlapping Tutor/Lab topics were **merged into single unified assignments**. Fo
 | [llm-text](examples-of-models/llm-text/) | LLM / text |
 | [generative-ai](examples-of-models/generative-ai/) | Generative AI |
 
-### `extra-topics` (overview)
+### `extra-topics` subfolders
 
-See [extra-topics/README.md](extra-topics/README.md) for the full list. Includes experiment tracking, feature stores, drift monitoring, forecasting, recommenders, MLOps CI/CD, fairness, RAG, HPO, AutoML, **website + stream scraping**, and **live stream analytics**.
+| Subfolder | Topic |
+|-----------|--------|
+| [experiment-tracking](extra-topics/experiment-tracking/) | MLflow / W&B experiment tracking |
+| [feature-stores](extra-topics/feature-stores/) | Feature store basics & point-in-time correctness |
+| [model-monitoring-and-drift](extra-topics/model-monitoring-and-drift/) | Monitoring, data/concept drift, alerts |
+| [time-series-forecasting](extra-topics/time-series-forecasting/) | Forecasting with walk-forward validation |
+| [recommender-systems](extra-topics/recommender-systems/) | Collaborative / content-based recommenders |
+| [mlops-cicd](extra-topics/mlops-cicd/) | CI/CD for data + model pipelines |
+| [responsible-ai-fairness](extra-topics/responsible-ai-fairness/) | Fairness metrics & model cards |
+| [vector-search-rag](extra-topics/vector-search-rag/) | Embeddings, vector search, RAG evaluation |
+| [hyperparameter-optimization](extra-topics/hyperparameter-optimization/) | Optuna / systematic HPO |
+| [tabular-automl](extra-topics/tabular-automl/) | AutoML vs hand-tuned baseline |
+| [data-scraping](extra-topics/data-scraping/) | Scraping from websites and from streams |
+| [live-stream-analytics](extra-topics/live-stream-analytics/) | Live / streaming analytics |
+
+### `data-scraping` subfolders
+
+| Subfolder | Topic |
+|-----------|--------|
+| [website-scraping](extra-topics/data-scraping/website-scraping/) | HTML / site scraping |
+| [stream-scraping](extra-topics/data-scraping/stream-scraping/) | Collecting records from a live or simulated stream |
 
 ---
 
