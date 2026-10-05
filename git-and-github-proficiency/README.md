@@ -1,13 +1,11 @@
-# Tutor1
+# Git and GitHub Proficiency
 
-### Task: Git and GitHub Proficiency Test
-
-This task aims to test your ability to use Git and GitHub effectively while working with branches, pull requests, and repository management. You will create a simple script in any scripting language (e.g., Python, Bash) that uses the `--help` flag to display a help message. You will then manage this project using Git and GitHub, following the instructions below.
+Test your ability to use Git and GitHub effectively with branches, pull requests, and repository management. You will create a simple script in any scripting language (e.g., Python, Bash) that uses the `--help` flag to display a help message, then manage the project with Git and GitHub.
 
 #### Instructions:
 
 1. **Create a GitHub repository**:
-   - Create a new GitHub private repository in this organisation with named `Tutor1_<your-student-numer>` (stuten number in version s12345).
+   - Create a new private GitHub repository in this organisation named `Tutor1_<your-student-number>` (student number format `s12345`).
    - Ensure the repository contains:
      - A `main` branch (default).
      - A `.gitignore` file (appropriate for the language you choose for your script).

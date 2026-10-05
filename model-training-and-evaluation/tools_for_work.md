@@ -1,4 +1,4 @@
-Here’s the translation of your text into English:
+# Tools for Work Organization
 
 ### 1. **Tools for Work Organization and Project Management**
    - **Trello/Asana** – for task management and organizing group work, tracking project progress.
@@ -19,7 +19,7 @@ Here’s the translation of your text into English:
 ### 4. **Tools for Text Quality Checking**
    - **Grammarly** – a tool for checking grammatical correctness of text (in English).
    - **Hemingway App** – a tool to help simplify and improve the clarity of text.
-   - **LanguageTool** – a multilingual tool for checking grammatical correctness, including Polish grammar.
+   - **LanguageTool** – a multilingual tool for checking grammatical correctness.
    
 ### 5. **Tools for Coding Support**
    - **Visual Studio Code** – a code editor with a wide range of plugins that allows for writing documentation alongside code.

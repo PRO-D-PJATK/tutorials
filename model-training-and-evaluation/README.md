@@ -1,5 +1,6 @@
-# Tutor4
-### Model Training and Evaluation (20 Points)
+# Model Training and Evaluation
+
+**Points: 20**
 
 1. **Model Selection (2 Points)**  
    - Select at least **three different machine learning models** from the following options (or any others you prefer):

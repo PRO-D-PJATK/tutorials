@@ -4,8 +4,8 @@ This educational project shows how to start working in **Google Colab** and comp
 
 Contents:
 
-- a complete Colab notebook (`colab_regresja.ipynb`),
-- a sample dataset (`mieszkania.csv`),
+- a complete Colab notebook (`colab_regression.ipynb`),
+- a sample dataset (`apartments.csv`),
 - step-by-step instructions for running the project and publishing it on GitHub.
 
 ---
@@ -39,7 +39,7 @@ Colab lets you:
 
 1. Unzip the downloaded project folder.  
 2. In Colab choose: **File → Upload notebook**.  
-3. Select `colab_regresja.ipynb`.  
+3. Select `colab_regression.ipynb`.  
 4. You can now run the cells.
 
 #### Option B — save a copy to Google Drive
@@ -53,8 +53,8 @@ Your changes will then sync to the cloud automatically.
 
 | File | Description |
 |------|-------------|
-| `colab_regresja.ipynb` | Main notebook with code, guidance, and exercises |
-| `mieszkania.csv` | Sample data: apartment area (m²) vs price (thousands of PLN) |
+| `colab_regression.ipynb` | Main notebook with code, guidance, and exercises |
+| `apartments.csv` | Sample data: apartment area (m²) vs price (thousands of PLN) |
 | `requirements.txt` | Dependencies (if you run locally) |
 | `.gitignore` | Ignores temporary files |
 | `README.md` | This document |
@@ -80,10 +80,10 @@ where:
 - \( a \) — slope (how fast price grows with area),  
 - \( b \) — intercept (baseline price when area = 0).
 
-### Data (`mieszkania.csv`)
+### Data (`apartments.csv`)
 
-| metraz_m2 | cena_tys |
-|------------|-----------|
+| area_m2 | price_thousands_pln |
+|---------|---------------------|
 | 35 | 310 |
 | 50 | 395 |
 | 65 | 470 |
@@ -95,7 +95,7 @@ This sample shows that **price increases with floor area**.
 
 ### Steps in the notebook
 
-In `colab_regresja.ipynb` you will:
+In `colab_regression.ipynb` you will:
 
 1. **Import** the CSV with pandas.  
 2. **Split** features (`X = area`) and target (`y = price`).  
@@ -105,20 +105,20 @@ In `colab_regresja.ipynb` you will:
 
 ### Independent exercises
 
-1. Add a `cena_za_m2` column and inspect how it changes with area.  
+1. Add a `price_per_m2` column and inspect how it changes with area.  
 2. Plot area (x) vs price per m² (y).  
 3. Compute model errors: MAE and/or MSE.  
-4. Add a second feature such as `metraz_m2 ** 2` and check whether a polynomial model fits better.  
-5. Save a plot to PNG (`plt.savefig("regresja.png")`).
+4. Add a second feature such as `area_m2 ** 2` and check whether a polynomial model fits better.  
+5. Save a plot to PNG (`plt.savefig("regression.png")`).
 
 ---
 
 ## 5. Suggested project layout
 
 ```
-colab_regresja_projekt/
-├── colab_regresja.ipynb
-├── mieszkania.csv
+colab_regression_project/
+├── colab_regression.ipynb
+├── apartments.csv
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -132,7 +132,7 @@ colab_regresja_projekt/
 
 1. Sign in at [https://github.com](https://github.com).  
 2. Click **New Repository**.  
-3. Name it, e.g. `colab-regresja`.  
+3. Name it, e.g. `colab-regression`.  
 4. Drag and drop project files (`.ipynb`, `.csv`, `README.md`, etc.).  
 5. Click **Commit changes**.
 
@@ -165,5 +165,5 @@ colab_regresja_projekt/
 
 ## 9. Submission
 
-- Create a repository in the **PROJ-D-2024** organization named `Colabolatory_<student-number>`.  
+- Create a repository in the **PROJ-D-2024** organization named `Colaboratory_<student-number>`.  
 - Submit the repository link in the Teams assignment.
