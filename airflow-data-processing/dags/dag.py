@@ -3,11 +3,11 @@ from airflow import DAG
 from airflow.operators.dummy import DummyOperator
 from airflow.operators.python import PythonOperator
 
-# Funkcja przykładowa, którą wykonamy w PythonOperatorze
+# Example function used by PythonOperator
 def my_function():
     print("Hello from Airflow!")
 
-# Definiowanie DAG-a
+# DAG definition
 with DAG(
         "my_first_dag",
         default_args={"owner": "airflow", "start_date": datetime(2023, 1, 1)},

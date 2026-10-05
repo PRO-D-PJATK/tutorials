@@ -1,82 +1,87 @@
-# 🧠 Wprowadzenie do Google Colab + Regresja Liniowa (projekt edukacyjny)
+# Introduction to Google Colab + Linear Regression
 
-Ten projekt ma na celu pokazać Ci **jak rozpocząć pracę w Google Colab** oraz wykonać **proste zadanie z regresją liniową w Pythonie** – czyli jednym z podstawowych modeli uczenia maszynowego.
+This educational project shows how to start working in **Google Colab** and complete a simple **linear regression** task in Python — one of the basic machine learning models.
 
-Zawiera:
-- kompletny notatnik Colab (`colab_regresja.ipynb`),
-- przykładowy zbiór danych (`mieszkania.csv`),
-- instrukcję krok po kroku jak uruchomić i zapisać projekt na GitHubie.
+Contents:
 
----
-
-## 🚀 1. Co to jest Google Colab?
-
-**Google Colaboratory (Colab)** to darmowe środowisko online do pisania i uruchamiania kodu Python.  
-Nie musisz nic instalować – wszystko działa w przeglądarce i zapisuje się automatycznie w Twoim **Google Drive**.
-
-Colab pozwala:
-- pisać i uruchamiać kod w języku **Python** (np. uczenie maszynowe, analizy danych, wykresy),
-- zapisywać projekty w chmurze (Google Drive),
-- współdzielić notatniki z innymi osobami,
-- korzystać z mocy obliczeniowej Google (CPU / GPU / TPU).
+- a complete Colab notebook (`colab_regresja.ipynb`),
+- a sample dataset (`mieszkania.csv`),
+- step-by-step instructions for running the project and publishing it on GitHub.
 
 ---
 
-## 🧑‍💻 2. Jak otworzyć Google Colab krok po kroku
+## 1. What is Google Colab?
 
-### 🔹 Krok 1: Otwórz Google Colab z Gmaila
-1. Będąc zalogowanym w Gmailu, kliknij **ikonkę 9 kropek (menu aplikacji Google)** w prawym górnym rogu.  
-2. Na liście znajdź **Colab** (lub „Colaboratory”).  
-3. Jeśli nie widzisz – kliknij **„Więcej z Google”** lub wpisz ręcznie w pasek przeglądarki:  
-   👉 [https://colab.research.google.com](https://colab.research.google.com)
+**Google Colaboratory (Colab)** is a free online environment for writing and running Python code.  
+Nothing needs to be installed locally — it runs in the browser and saves automatically to **Google Drive**.
 
----
+Colab lets you:
 
-### 🔹 Krok 2: Otwórz notatnik z tego projektu
-Masz kilka opcji:
-
-#### ✅ Opcja A – wgraj notatnik lokalnie:
-1. Rozpakuj pobrany plik ZIP z projektem.  
-2. W Colab wybierz: **Plik → Prześlij notatnik (Upload notebook)**.  
-3. Wskaż plik `colab_regresja.ipynb`.  
-4. Gotowe — możesz uruchamiać komórki!
-
-#### ☁️ Opcja B – zapisz kopię w Google Drive:
-W Colab kliknij: **Plik → Zapisz kopię w Dysku (Save a copy in Drive)**.  
-Dzięki temu Twoje zmiany będą automatycznie zapisywane w chmurze.
+- write and run **Python** (e.g. machine learning, data analysis, plots),
+- store projects in the cloud (Google Drive),
+- share notebooks with others,
+- use Google compute (CPU / GPU / TPU).
 
 ---
 
-## 📊 3. Zawartość projektu
+## 2. How to open Google Colab
 
-| Plik | Opis |
-|------|------|
-| `colab_regresja.ipynb` | Główny notatnik z kodem, instrukcjami i zadaniem |
-| `mieszkania.csv` | Przykładowe dane: metraż mieszkania (m²) vs cena (tys. zł) |
-| `requirements.txt` | Lista bibliotek (jeśli chcesz uruchamiać lokalnie) |
-| `.gitignore` | Plik konfiguracyjny pomijający pliki tymczasowe |
-| `README.md` | Ten dokument |
+### Step 1: Open Colab from Gmail
+
+1. While signed into Gmail, click the **9-dot Google apps menu** in the top-right corner.  
+2. Find **Colab** (or “Colaboratory”).  
+3. If it is missing, click **“More from Google”** or open:  
+   [https://colab.research.google.com](https://colab.research.google.com)
+
+### Step 2: Open this project’s notebook
+
+#### Option A — upload the notebook locally
+
+1. Unzip the downloaded project folder.  
+2. In Colab choose: **File → Upload notebook**.  
+3. Select `colab_regresja.ipynb`.  
+4. You can now run the cells.
+
+#### Option B — save a copy to Google Drive
+
+In Colab click: **File → Save a copy in Drive**.  
+Your changes will then sync to the cloud automatically.
 
 ---
 
-## 📚 4. Opis zadania: Regresja liniowa
+## 3. Project contents
 
-### 🎯 Cel:
-Przewidzieć **cenę mieszkania (w tysiącach zł)** na podstawie jego **metrażu (m²)**.
+| File | Description |
+|------|-------------|
+| `colab_regresja.ipynb` | Main notebook with code, guidance, and exercises |
+| `mieszkania.csv` | Sample data: apartment area (m²) vs price (thousands of PLN) |
+| `requirements.txt` | Dependencies (if you run locally) |
+| `.gitignore` | Ignores temporary files |
+| `README.md` | This document |
 
-Model, którego użyjemy:  
+---
+
+## 4. Assignment: Linear regression
+
+### Goal
+
+Predict **apartment price (thousands of PLN)** from **floor area (m²)**.
+
+Model:
+
 \[
 y = a \cdot x + b
 \]
-gdzie:
-- \( y \) — przewidywana cena mieszkania,  
-- \( x \) — metraż,  
-- \( a \) — współczynnik nachylenia (jak szybko rośnie cena wraz z metrażem),  
-- \( b \) — wyraz wolny (cena bazowa, gdy metraż = 0).
 
----
+where:
 
-### 📦 Dane (`mieszkania.csv`)
+- \( y \) — predicted price,  
+- \( x \) — floor area,  
+- \( a \) — slope (how fast price grows with area),  
+- \( b \) — intercept (baseline price when area = 0).
+
+### Data (`mieszkania.csv`)
+
 | metraz_m2 | cena_tys |
 |------------|-----------|
 | 35 | 310 |
@@ -86,84 +91,79 @@ gdzie:
 | 100 | 670 |
 | 120 | 770 |
 
-To przykładowy zbiór danych – pokazuje, że **cena rośnie wraz z metrażem**.
+This sample shows that **price increases with floor area**.
+
+### Steps in the notebook
+
+In `colab_regresja.ipynb` you will:
+
+1. **Import** the CSV with pandas.  
+2. **Split** features (`X = area`) and target (`y = price`).  
+3. **Train** a linear regression model (`LinearRegression` from `scikit-learn`).  
+4. **Visualize** results on a plot.  
+5. **Predict** for new values (e.g. 40, 60, 80 m²).
+
+### Independent exercises
+
+1. Add a `cena_za_m2` column and inspect how it changes with area.  
+2. Plot area (x) vs price per m² (y).  
+3. Compute model errors: MAE and/or MSE.  
+4. Add a second feature such as `metraz_m2 ** 2` and check whether a polynomial model fits better.  
+5. Save a plot to PNG (`plt.savefig("regresja.png")`).
 
 ---
 
-### 🔍 Krok po kroku w notatniku
-W `colab_regresja.ipynb` wykonasz:
-
-1. **Import danych** z pliku CSV (pandas).  
-2. **Podział danych** na cechę (`X = metraż`) i cel (`y = cena`).  
-3. **Uczenie modelu regresji liniowej** (`LinearRegression` z `scikit-learn`).  
-4. **Wizualizacja wyników** na wykresie.  
-5. **Predykcja** dla nowych wartości (np. 40, 60, 80 m²).
-
----
-
-### 🧩 Zadania do samodzielnego wykonania
-
-1. 💰 Dodaj kolumnę `cena_za_m2` i sprawdź, jak się zmienia wraz z metrażem.  
-2. 📈 Zrób wykres: metraż (x) vs cena za m² (y).  
-3. 🧮 Policz błędy modelu: średni błąd absolutny (MAE) lub średni kwadratowy (MSE).  
-4. ⚙️ Spróbuj dodać drugą cechę — np. `metraz_m2 ** 2` i zobacz, czy model działa lepiej (regresja wielomianowa).  
-5. 💾 Zapisz wykres do pliku PNG (`plt.savefig("regresja.png")`).
-
----
-
-## 🧱 5. Struktura projektu
+## 5. Suggested project layout
 
 ```
-
 colab_regresja_projekt/
 ├── colab_regresja.ipynb
 ├── mieszkania.csv
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
 ```
 
 ---
 
-## 🌍 6. Jak opublikować projekt na GitHubie
+## 6. How to publish on GitHub
 
-### 🔹 Opcja 1 — przez przeglądarkę (najprostsza)
-1. Wejdź na [https://github.com](https://github.com) i zaloguj się.  
-2. Kliknij przycisk **New Repository**.  
-3. Nazwij projekt, np. `colab-regresja`.  
-4. W nowym repozytorium przeciągnij i upuść pliki z folderu projektu (`.ipynb`, `.csv`, `README.md`, itd.).  
-5. Kliknij **Commit changes**.
+### Option 1 — browser (simplest)
 
----
+1. Sign in at [https://github.com](https://github.com).  
+2. Click **New Repository**.  
+3. Name it, e.g. `colab-regresja`.  
+4. Drag and drop project files (`.ipynb`, `.csv`, `README.md`, etc.).  
+5. Click **Commit changes**.
 
-### 🔹 Opcja 2 — bezpośrednio z Colab
-1. W Colab wybierz: **Plik → Zapisz kopię w GitHubie**.  
-2. Wybierz swoje repozytorium.  
-3. Dodaj komentarz np. „Pierwsza wersja projektu regresji liniowej”.  
-4. Kliknij **OK** – gotowe!
+### Option 2 — directly from Colab
 
----
-
-## 🧠 7. Wiedza w pigułce – co zapamiętać
-
-- **Colab** to darmowe środowisko Pythona w przeglądarce.  
-- **Regresja liniowa** przewiduje wartości ciągłe (np. ceny, temperatury).  
-- W `scikit-learn` model tworzymy za pomocą `LinearRegression()`.  
-- Warto wizualizować dane – to pomaga lepiej zrozumieć wyniki.  
-- **GitHub** pozwala dzielić się kodem i tworzyć portfolio projektów.
+1. In Colab choose: **File → Save a copy in GitHub**.  
+2. Select your repository.  
+3. Add a short commit message (e.g. “First version of the linear regression project”).  
+4. Confirm.
 
 ---
 
-## ✅ 8. Co dalej?
+## 7. Key takeaways
 
-- Spróbuj wczytać **własny zbiór danych** (np. ceny aut, wzrost vs waga, itp.).
-- Zmień model na `PolynomialFeatures` i sprawdź, jak dopasowanie się zmienia.
-- Utwórz nowy notebook w Colab i poeksperymentuj!
+- **Colab** is a free in-browser Python environment.  
+- **Linear regression** predicts continuous values (prices, temperatures, etc.).  
+- In `scikit-learn`, create the model with `LinearRegression()`.  
+- Visualizing data helps interpret results.  
+- **GitHub** is useful for sharing code and building a portfolio.
 
 ---
 
-## ✅ 9. Wyniki
+## 8. What next?
 
-- Stwórz repo w organizacji **PROJ-D-2024** o nazwie "Colabolatory_<numer-studenta>"
-- Wyślij link do swojego repozytoiru w zadaniu na Temsach.
+- Load **your own dataset** (e.g. car prices, height vs weight).  
+- Try `PolynomialFeatures` and compare the fit.  
+- Create a new Colab notebook and experiment.
+
+---
+
+## 9. Submission
+
+- Create a repository in the **PROJ-D-2024** organization named `Colabolatory_<student-number>`.  
+- Submit the repository link in the Teams assignment.

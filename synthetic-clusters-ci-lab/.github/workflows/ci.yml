@@ -2,7 +2,7 @@
 
 name: CI/CD Pipeline for ML Model Training
 
-# Wykonuj akcje przy każdym pushu do gałęzi main
+# Run on every push to main
 on:
   push:
     branches:
@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # Krok 1: Checkout repozytorium
+      # Step 1: Check out the repository
 
-      # Krok 2: Zainstaluj Python i zależności
+      # Step 2: Install Python and dependencies
 
-      # Krok 3: Uruchom trenowanie modelu
+      # Step 3: Run model training
 
-      # Krok 4: Wyświetl wynik (accuracy)
+      # Step 4: Display the accuracy result
       - name: Display training result
         run: cat accuracy.txt

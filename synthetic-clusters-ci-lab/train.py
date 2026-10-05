@@ -1,21 +1,21 @@
 # train.py
 
-# Generowanie prostego zbioru danych
+# Generate a simple dataset
 def generate_data():
+    pass
 
-# Trenowanie prostego modelu regresji logistycznej
+# Train a simple logistic regression model
 def train_model():
-   
-    # Podział na zbiór treningowy i testowy
-    
-    # Trenowanie modelu
-    
-    # Predykcja na zbiorze testowym
-    
-    # Wyliczenie dokładności
-    
-    # Zapis wyniku
-    
+    # Split into train and test sets
+
+    # Train the model
+
+    # Predict on the test set
+
+    # Compute accuracy
+
+    # Save the result
+
     print(f"Model trained with accuracy: {accuracy * 100:.2f}%")
 
 if __name__ == "__main__":

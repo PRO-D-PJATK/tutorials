@@ -1,7 +1,7 @@
 name: Run Airflow DAG
 
 on:
-  workflow_dispatch: # Pozwala na ręczne uruchomienie workflow
+  workflow_dispatch: # Allow manual workflow runs
 
 jobs:
   run_airflow_dag:
@@ -20,7 +20,7 @@ jobs:
         run: |
           docker-compose up -d
           echo "Waiting for Airflow Webserver to start..."
-          timeout=60 # Czas oczekiwania na uruchomienie Airflow w sekundach (5 minut)
+          timeout=60 # Wait time for Airflow startup in seconds
           while ! curl -s http://localhost:8080 | grep -q "Log In"; do
             if [ $timeout -le 0 ]; then
               echo "Timeout waiting for Airflow to start"
