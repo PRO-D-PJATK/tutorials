@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Local env (do not commit secrets)
+.env
+.env.local
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
