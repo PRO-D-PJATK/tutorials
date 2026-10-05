@@ -48,17 +48,17 @@
 
 #### Scoring (6 points):  
 
-1. **Clarity and Structure of Presentation (3 points)**  
+1. **Clarity and Structure of Presentation (2 points)**  
    - Is the presentation understandable and well-organized?  
 
-2. **Inclusion of Key Elements (3 points)**  
+2. **Inclusion of Key Elements (2 points)**  
    - Are all required elements (problem, solution, technology, results, future) covered?  
 
-3. **Professionalism and Engagement (2 points)**  
+3. **Professionalism and Engagement (1 point)**  
    - Is the presentation visually appealing and engaging?  
    - Was the speaking style convincing and professional?  
 
-4. **Final Report (2 points)**  
+4. **Final Report (1 point)**  
    - Does the report effectively summarize the project and include all required elements?  
 
 Good luck with creating a professional and inspiring business presentation!
