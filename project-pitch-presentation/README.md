@@ -1,6 +1,7 @@
-# Tutor-X2
+# Project Pitch Presentation
 
-### Task:  Project Presentation (10 points)  
+**Points: 10**
+
 
 #### Objectives:
 - Present the project in the form of a business pitch aimed at engaging potential investors.  
