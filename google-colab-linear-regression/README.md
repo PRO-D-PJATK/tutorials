@@ -167,5 +167,5 @@ colab_regression_project/
 
 ## 9. Submission
 
-- Create a repository in the **PROJ-D-2024** organization named `Colaboratory_<student-number>`.  
+- Create a repository in the **PRO-D-PJATK** organization named `Colaboratory_<student-number>`.  
 - Submit the repository link in the Teams assignment.

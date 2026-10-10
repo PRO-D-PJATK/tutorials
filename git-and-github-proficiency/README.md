@@ -7,7 +7,7 @@ Test your ability to use Git and GitHub effectively with branches, pull requests
 #### Instructions:
 
 1. **Create a GitHub repository**:
-   - Create a new private GitHub repository in this organisation named `Tutor1_<your-student-number>` (student number format `s12345`).
+   - Create a new private GitHub repository in the **PRO-D-PJATK** organisation named `Tutor1_<your-student-number>` (student number format `s12345`).
    - Ensure the repository contains:
      - A `main` branch (default).
      - A `.gitignore` file (appropriate for the language you choose for your script).

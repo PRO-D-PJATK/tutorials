@@ -1,6 +1,6 @@
 # Tutorials
 
-Aggregated course tutorials created by the instructor in [`PROJ-D-2024`](https://github.com/orgs/PROJ-D-2024/repositories), **excluding** thesis task sets (counterparts of `Zadania_PRO3_D` / `PRO-D-2-THESIS`) and student submission repositories.
+Aggregated course tutorials created by the instructor in [`PRO-D-PJATK`](https://github.com/orgs/PRO-D-PJATK/repositories), **excluding** thesis task sets (counterparts of `Zadania_PRO3_D` / `PRO-D-2-THESIS`) and student submission repositories.
 
 Overlapping Tutor/Lab topics were **merged into single unified assignments**. Folder names describe the topic.
 
@@ -87,6 +87,6 @@ Optional bonuses (if stated in a task brief) are **extra** and do not change the
 
 ## Notes
 
-- Content originates from private `PROJ-D-2024` instructor templates; treat as course material.
+- Content originates from private `PRO-D-PJATK` instructor templates; treat as course material.
 - All assignment briefs in this repository are written in English.
 - The **Points** column is the maximum grade for that assignment (difficulty-weighted, scale **5–20**).
