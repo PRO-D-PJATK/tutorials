@@ -1,0 +1,17 @@
+# MLflow local stores
+mlruns/
+mlartifacts/
+*.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.local
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

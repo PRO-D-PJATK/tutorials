@@ -6,7 +6,7 @@ Each subfolder is a standalone assignment brief in English.
 
 | Folder | Topic | Points |
 |--------|--------|:------:|
-| [experiment-tracking](experiment-tracking/) | MLflow / W&B experiment tracking | 9 |
+| [experiment-tracking](experiment-tracking/) | MLflow / W&B experiment tracking (light; see also core [`mlflow-experiment-tracking`](../mlflow-experiment-tracking/)) | 9 |
 | [tabular-automl](tabular-automl/) | AutoML vs hand-tuned baseline | 10 |
 | [hyperparameter-optimization](hyperparameter-optimization/) | Optuna / systematic HPO | 11 |
 | [recommender-systems](recommender-systems/) | Collaborative / content-based recommenders | 12 |

@@ -4,6 +4,9 @@ Track ML experiments so every run is comparable and reproducible.
 
 **Points: 9**
 
+> For a fuller **MLflow-only** core assignment (tracking + Model Registry, 15 pts), see
+> [`mlflow-experiment-tracking`](../../mlflow-experiment-tracking/).
+
 ---
 
 ## Task

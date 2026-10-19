@@ -35,6 +35,7 @@ Optional bonuses (if stated in a task brief) are **extra** and do not change the
 | [data-cleaning-and-standardization](data-cleaning-and-standardization/) | Cleaning, DB updates, standardization & code quality | 14 |
 | [dockerized-predictive-api](dockerized-predictive-api/) | Predictive app, Docker, Hub publish + docs | 14 |
 | [kedro-pipelines](kedro-pipelines/) | Reproducible Kedro pipelines (catalog, nodes, parameters) | 15 |
+| [mlflow-experiment-tracking](mlflow-experiment-tracking/) | MLflow tracking, artefacts, model registry & reproducibility | 15 |
 | [airflow-data-processing](airflow-data-processing/) | Two Airflow DAGs: download/split + clean/standardize | 16 |
 | [data-engineering](data-engineering/) | Batch data engineering: ingest → clean → curated + quality checks | 17 |
 | [examples-of-models](examples-of-models/) | Modality mini-projects (see subfolders; each scored separately) | — |
