@@ -2,7 +2,7 @@
 
 Create two Apache Airflow DAGs for a small data pipeline: download & split, then clean & standardize. Prefer running Airflow via Docker Compose.
 
-**Total: 16 points** (+ optional extras)
+**Total: 15 points** (+ optional extras)
 
 Reference: [Airflow with Docker Compose](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
 
@@ -18,14 +18,14 @@ This folder also includes example `docker-compose.yml`, sample DAGs under `dags/
 
 ---
 
-## DAG 1 — Download and split (8 points)
+## DAG 1 — Download and split (7 points)
 
 **Goal:** Fetch a dataset and split it for modeling vs further fine-tuning / hold-out use.
 
-1. **Download operator (4 points)**  
+1. **Download operator (3 points)**  
    - Task that downloads data from a public URL or reads a local `.csv` path available to the worker.
 
-2. **Split operator (6 points)**  
+2. **Split operator (4 points)**  
    - Split into **70%** modeling set and **30%** fine-tuning / secondary set using `sklearn.model_selection.train_test_split`.  
    - Use a fixed `random_state` for reproducibility.
 
@@ -39,18 +39,18 @@ This folder also includes example `docker-compose.yml`, sample DAGs under `dags/
 
 **Goal:** Process the modeling split (from local artefacts of DAG 1 and/or Sheets/cloud).
 
-1. **Load operator (1–2 points)**  
+1. **Load operator (1 point)**  
    - Retrieve the modeling dataset produced by DAG 1.
 
-2. **Cleaning operator (4 points)**  
+2. **Cleaning operator (3 points)**  
    - Handle missing values (drop or impute with a documented strategy).  
    - Detect and remove duplicates when appropriate.
 
-3. **Standardization / normalization operator (4–6 points)**  
+3. **Standardization / normalization operator (3 points)**  
    - Scale features (e.g. `StandardScaler`) and/or rescale to a range (`MinMaxScaler`).  
    - Document which columns are transformed and why.
 
-4. **Save operator (2 points)**  
+4. **Save operator (1 point)**  
    - Write the processed dataset back to local storage and/or Google Sheets / cloud.
 
 ---
